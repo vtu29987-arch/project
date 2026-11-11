@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="laptopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="laptopScreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="#F8FAFC" rx="24"/>
+  <circle cx="80" cy="80" r="60" fill="#E2E8F0" opacity="0.5"/>
+  <circle cx="330" cy="220" r="70" fill="#E0F2FE" opacity="0.6"/>
+
+  <!-- Laptop Display -->
+  <g transform="translate(65, 45)">
+    <rect x="20" y="0" width="230" height="150" rx="12" fill="url(#laptopGrad)" stroke="#475569" stroke-width="2"/>
+    <rect x="28" y="8" width="214" height="134" rx="6" fill="url(#laptopScreen)"/>
+    <!-- Code Editor graphic on screen -->
+    <rect x="34" y="14" width="202" height="18" fill="#0F172A" rx="4"/>
+    <circle cx="44" cy="23" r="3" fill="#EF4444"/>
+    <circle cx="54" cy="23" r="3" fill="#F59E0B"/>
+    <circle cx="64" cy="23" r="3" fill="#10B981"/>
+    <text x="135" y="26" text-anchor="middle" font-family="monospace" font-size="8" fill="#94A3B8">CS_Project.js</text>
+    
+    <rect x="40" y="42" width="70" height="4" rx="2" fill="#38BDF8"/>
+    <rect x="40" y="52" width="120" height="4" rx="2" fill="#F8FAFC"/>
+    <rect x="52" y="62" width="90" height="4" rx="2" fill="#FDE047"/>
+    <rect x="52" y="72" width="130" height="4" rx="2" fill="#86EFAC"/>
+    <rect x="40" y="82" width="40" height="4" rx="2" fill="#38BDF8"/>
+
+    <!-- Laptop Base / Keyboard -->
+    <path d="M 0 152 L 270 152 L 255 185 L 15 185 Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5"/>
+    <rect x="55" y="156" width="160" height="14" rx="2" fill="#64748B" opacity="0.7"/>
+    <rect x="105" y="173" width="60" height="9" rx="3" fill="#94A3B8"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#ECFDF5" rx="24"/>
+  <circle cx="280" cy="120" r="80" fill="#D1FAE5" opacity="0.6"/>
+  
+  <g transform="translate(155, 30)">
+    <!-- Cap Loop Handle -->
+    <path d="M 35 15 C 35 0, 55 0, 55 15" fill="none" stroke="#1E293B" stroke-width="8" stroke-linecap="round"/>
+    <!-- Bottle Cap -->
+    <rect x="25" y="15" width="40" height="25" rx="5" fill="#334155"/>
+    <rect x="22" y="38" width="46" height="12" rx="3" fill="#1E293B"/>
+    
+    <!-- Bottle Body (Olive green stainless steel Hydro Flask) -->
+    <rect x="10" y="50" width="70" height="190" rx="18" fill="#3F6212" stroke="#1A2E05" stroke-width="3"/>
+    
+    <!-- Stickers on bottle -->
+    <circle cx="45" cy="100" r="16" fill="#38BDF8"/>
+    <text x="45" y="103" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="7" fill="#0F172A">&lt;CODE/&gt;</text>
+    
+    <rect x="25" y="135" width="40" height="24" rx="4" fill="#F43F5E"/>
+    <text x="45" y="150" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="8" fill="#FFFFFF">CAMPUS</text>
+    
+    <circle cx="45" cy="185" r="14" fill="#FBBF24"/>
+    <polygon points="45,175 48,183 57,183 50,188 52,196 45,191 38,196 40,188 33,183 42,183" fill="#B45309"/>
+    
+    <!-- Bottom Rim Dent -->
+    <ellipse cx="45" cy="236" rx="30" ry="4" fill="#1A2E05"/>
+  </g>
+</svg>

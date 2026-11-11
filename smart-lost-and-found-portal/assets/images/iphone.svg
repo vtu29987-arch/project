@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="phoneBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="#F1F5F9" rx="24"/>
+  <circle cx="340" cy="60" r="80" fill="#E0F2FE" opacity="0.6"/>
+  <circle cx="60" cy="240" r="70" fill="#BAE6FD" opacity="0.4"/>
+  
+  <!-- Smartphone Body -->
+  <g filter="url(#shadow)" transform="translate(130, 25)">
+    <!-- Outer Case -->
+    <rect x="0" y="0" width="140" height="250" rx="28" fill="#1E293B" stroke="#334155" stroke-width="3"/>
+    <!-- Screen -->
+    <rect x="6" y="6" width="128" height="238" rx="22" fill="url(#screenGrad)"/>
+    <!-- Notch / Dynamic Island -->
+    <rect x="42" y="14" width="56" height="12" rx="6" fill="#0F172A"/>
+    <circle cx="54" cy="20" r="2.5" fill="#1E293B"/>
+    <!-- Lockscreen Puppy / Wallpaper graphic -->
+    <circle cx="70" cy="95" r="26" fill="#FBBF24" opacity="0.85"/>
+    <ellipse cx="62" cy="85" rx="5" ry="8" fill="#78350F"/>
+    <ellipse cx="78" cy="85" rx="5" ry="8" fill="#78350F"/>
+    <circle cx="63" cy="94" r="3" fill="#1E293B"/>
+    <circle cx="77" cy="94" r="3" fill="#1E293B"/>
+    <ellipse cx="70" cy="102" rx="4" ry="3" fill="#1E293B"/>
+    <!-- Clock on Screen -->
+    <text x="70" y="145" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF">10:42</text>
+    <text x="70" y="162" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#E0F2FE">Friday, November 8</text>
+    <!-- Home Bar -->
+    <rect x="45" y="234" width="50" height="3" rx="1.5" fill="#FFFFFF" opacity="0.7"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#F8FAFC" rx="24"/>
+  <circle cx="200" cy="150" r="100" fill="#E0F2FE" opacity="0.4"/>
+  
+  <g transform="translate(110, 45)">
+    <!-- Headband Arch -->
+    <path d="M 25 140 C 25 35, 155 35, 155 140" fill="none" stroke="#334155" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 45 90 C 45 45, 135 45, 135 90" fill="none" stroke="#0F172A" stroke-width="6"/>
+    
+    <!-- Left Ear Cup -->
+    <g transform="translate(10, 110)">
+      <rect x="0" y="0" width="30" height="65" rx="15" fill="#1E293B" stroke="#0F172A" stroke-width="2"/>
+      <rect x="8" y="5" width="26" height="55" rx="12" fill="#475569"/>
+      <!-- Soft Cushion -->
+      <rect x="-6" y="8" width="14" height="49" rx="7" fill="#64748B"/>
+    </g>
+
+    <!-- Right Ear Cup -->
+    <g transform="translate(140, 110)">
+      <rect x="0" y="0" width="30" height="65" rx="15" fill="#1E293B" stroke="#0F172A" stroke-width="2"/>
+      <rect x="-4" y="5" width="26" height="55" rx="12" fill="#475569"/>
+      <!-- Soft Cushion -->
+      <rect x="22" y="8" width="14" height="49" rx="7" fill="#64748B"/>
+    </g>
+
+    <!-- Sony style logo tag -->
+    <text x="90" y="195" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="9" fill="#0284C7">SONY WH-1000XM4</text>
+  </g>
+</svg>

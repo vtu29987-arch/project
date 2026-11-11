@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Lost and Found Portal (S.L.F.P.)</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#0B1120',
+              900: '#0F172A',
+              800: '#1E293B',
+              700: '#334155',
+            },
+            accent: {
+              DEFAULT: '#0284C7',
+              light: '#38BDF8',
+              soft: '#F0F9FF',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts & Custom CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10'/></svg>">
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Top Sticky Navigation Bar -->
+  <div id="navbar-container"></div>
+
+  <!-- Dynamic Main Content Views -->
+  <main id="main-content" class="flex-1"></main>
+
+  <!-- Modal Roots & Floating Components -->
+  <div id="auth-modal-root"></div>
+  <div id="item-details-modal"></div>
+  <div id="claim-action-modal"></div>
+  <div id="poster-modal-root"></div>
+  <div id="report-confirmation-modal"></div>
+  <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 max-w-sm pointer-events-none"></div>
+
+  <!-- Application Logic & Modular Components -->
+  <script src="./js/data/mock-data.js"></script>
+  <script src="./js/store.js"></script>
+  <script src="./js/matching-engine.js"></script>
+  
+  <script src="./js/components/navbar.js"></script>
+  <script src="./js/components/home.js"></script>
+  <script src="./js/components/report-forms.js"></script>
+  <script src="./js/components/search.js"></script>
+  <script src="./js/components/item-details.js"></script>
+  <script src="./js/components/claim-modal.js"></script>
+  <script src="./js/components/dashboard.js"></script>
+  <script src="./js/components/admin.js"></script>
+  <script src="./js/components/notifications.js"></script>
+  <script src="./js/components/auth-modal.js"></script>
+  <script src="./js/components/poster-modal.js"></script>
+
+  <!-- Router and Coordinator -->
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
